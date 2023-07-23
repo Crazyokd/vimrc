@@ -10,8 +10,15 @@ set relativenumber number
 " set [incremental] search highlight
 set hlsearch incsearch
 
+" 设置tab键宽度为2
+set tabstop=2
+" 设置自动缩进时的缩进宽度为2
+set shiftwidth=2
+" 将tab自动转换为空格
+" set expandtab
+
 " enable vim-rainbow
-let g:rainbow_active = 1
+let g:rainbow_active=1
 
 " replace grep with rg
 " set grepprg=rg\ --vimgrep\ --smart-case\ --follow

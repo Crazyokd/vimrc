@@ -15,6 +15,9 @@ noremap <Right> <NOP>
 " :nol
 nnoremap <esc><esc> :noh<return><esc>
 
+" nerdtree
+nnoremap <C-t> :NERDTreeToggle<CR>
+
 
 
 " nnoremap <silent> <Leader>b :Buffers<CR>
