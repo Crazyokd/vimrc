@@ -13,6 +13,9 @@ Plug 'ycm-core/YouCompleteMe'
 
 " nerdtree
 Plug 'preservim/nerdtree'
+
+" vim-airline
+Plug 'vim-airline/vim-airline'
 " Initialize plugin system
 call plug#end()
 
