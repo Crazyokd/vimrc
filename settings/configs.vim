@@ -17,6 +17,11 @@ set shiftwidth=2
 " 将tab自动转换为空格
 " set expandtab
 
+" vim-colors-solarized
+syntax enable
+set background=dark
+colorscheme solarized
+
 " enable vim-rainbow
 let g:rainbow_active=1
 

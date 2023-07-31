@@ -16,6 +16,9 @@ Plug 'preservim/nerdtree'
 
 " vim-airline
 Plug 'vim-airline/vim-airline'
+" tpope/vim-surround
+Plug 'tpope/vim-surround'
+
 " Initialize plugin system
 call plug#end()
 
