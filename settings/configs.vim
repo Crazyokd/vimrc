@@ -25,6 +25,3 @@ colorscheme solarized
 " enable vim-rainbow
 let g:rainbow_active=1
 
-" replace grep with rg
-" set grepprg=rg\ --vimgrep\ --smart-case\ --follow
-
