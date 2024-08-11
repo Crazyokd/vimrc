@@ -21,6 +21,7 @@
 				}
 			}
 		}
-	}
+	},
+	"semanticTokens.enable": false,
 }
 
