@@ -3,7 +3,7 @@
 		"ccls": {
 			"command": "ccls",
 			"filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-			"rootPatterns": [".ccls", ".ccls-root", "compile_commands.json", "build/compile_commands.json", ".git/", ".hg/"],
+			"rootPatterns": ["build/compile_commands.json", ".git/", ".ccls", ".ccls-root", "compile_commands.json", ".hg/"],
 			"initializationOptions": {
 				"cache": {
 					"directory": "/tmp/ccls"
@@ -15,8 +15,8 @@
 				"highlight": { "lsRanges": true },
 				"clang": {
 					"extraArgs": [
-						"-I/usr/include/x86_64-linux-gnu",
-						"-I/usr/include"
+						"--query-driver=/usr/bin/gcc,/usr/bin/g++",
+						"--gcc-toolchain=/usr",
 					],
 				}
 			}

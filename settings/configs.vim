@@ -19,3 +19,8 @@ set shiftwidth=4
 
 " enable vim-rainbow
 let g:rainbow_active=1
+
+
+" color scheme
+let g:seoul256_background = 234
+colo seoul256
