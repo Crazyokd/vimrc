@@ -22,5 +22,8 @@ let g:rainbow_active=1
 
 
 " color scheme
-let g:seoul256_background = 234
-colo seoul256
+" let g:seoul256_background = 234
+" colo seoul256
+set termguicolors
+set rtp+=~/.vim/tokyonight.nvim/extras/vim
+colorscheme tokyonight

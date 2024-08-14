@@ -26,7 +26,7 @@ Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'Yggdroot/indentLine'
 
 " color scheme
-Plug 'junegunn/seoul256.vim'
+" Plug 'junegunn/seoul256.vim'
 
 " Initialize plugin system
 call plug#end()
