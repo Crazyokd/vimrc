@@ -25,6 +25,9 @@ Plug 'jackguo380/vim-lsp-cxx-highlight'
 " indent line
 Plug 'Yggdroot/indentLine'
 
+" 
+Plug 'majutsushi/tagbar'
+
 " color scheme
 " Plug 'junegunn/seoul256.vim'
 

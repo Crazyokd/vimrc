@@ -1,0 +1,28 @@
+{
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+			"rootPatterns": ["build/compile_commands.json", ".git/", ".ccls", ".ccls-root", "compile_commands.json", ".hg/"],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				},
+				"client": {
+					"snippetSupport": true
+				},
+				"compilationDatabaseDirectory": "build",
+				"highlight": { "lsRanges": true },
+				"clang": {
+					"extraArgs": [
+						"--query-driver=/usr/bin/gcc,/usr/bin/g++",
+						"--gcc-toolchain=/usr",
+						"-std=c++17",
+					],
+				}
+			}
+		}
+	},
+	"semanticTokens.enable": false,
+}
+
