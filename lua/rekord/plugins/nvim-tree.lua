@@ -1,5 +1,6 @@
 return {
   "nvim-tree/nvim-tree.lua",
+--  dependencies = "nvim-tree/nvim-web-devicons",
   config = function()
     local nvimtree = require("nvim-tree")
 
@@ -8,7 +9,14 @@ return {
     vim.g.loaded_netrwPlugin = 1
 
     -- empty setup using defaults
-    nvimtree.setup()
+    nvimtree.setup({
+      disable_netrw = true,
+      hijack_netrw = true,
+      git = {
+        enable = false
+        -- timeout = 400 -- each git process is now discarded after a configured tiemout(in ms)
+      }
+    })
     
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
