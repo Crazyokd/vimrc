@@ -12,10 +12,19 @@ return {
     "hrsh7th/cmp-buffer", -- source for text in buffer
     "hrsh7th/cmp-path", -- source for file system paths
   --  "saadparwaiz1/cmp_luasnip", -- for autocompletion
+    {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        opts = {},
+    },
   },
   config = function()
     local cmp = require("cmp")
+    local cmp_autopairs = require("nvim-autopairs.completion.cmp")
     local luasnip = require("luasnip")
+
+    -- make autopairs and completion work together
+    cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
     cmp.setup({ -- configure how nvim-cmp interacts with snippet engine
       snippet = {
