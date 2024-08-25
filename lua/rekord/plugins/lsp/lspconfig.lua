@@ -28,7 +28,8 @@ return {
           extraArgs = {
             "--query-driver=/usr/bin/gcc,/usr/bin/g++",
             "--gcc-toolchain=/usr",
-            "-std=c++17",
+--          "-std=c++17",
+--          "-std=gnu89",
           };
         };
       }
