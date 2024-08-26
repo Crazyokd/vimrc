@@ -1,6 +1,6 @@
 return {
   "nvim-tree/nvim-tree.lua",
---  dependencies = "nvim-tree/nvim-web-devicons",
+  dependencies = "nvim-tree/nvim-web-devicons",
   config = function()
     local nvimtree = require("nvim-tree")
 
@@ -12,10 +12,24 @@ return {
     nvimtree.setup({
       disable_netrw = true,
       hijack_netrw = true,
+
+      renderer = {
+        icons = {
+            show = {
+                file = true,
+                git = false,
+            },
+        },
+        highlight_git = "name",
+      },
       git = {
-        enable = false
+        enable = true,
         -- timeout = 400 -- each git process is now discarded after a configured tiemout(in ms)
-      }
+        ignore = false,
+      },
+      filters = {
+          custom = { '.git' },
+      },
     })
     
     -- set keymaps
