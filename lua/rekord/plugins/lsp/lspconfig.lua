@@ -2,6 +2,10 @@ return {
   "neovim/nvim-lspconfig",
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
+        --[[ {
+            "jackguo380/vim-lsp-cxx-highlight",
+            ft = { 'c', 'cpp', 'h', 'hpp' }
+        } ]]
 	},
   config = function()
     local lspconfig = require("lspconfig")
@@ -9,6 +13,14 @@ return {
 
     lspconfig.lua_ls.setup {
       capabilities = capabilities,
+
+      settings = {
+          Lua = {
+              diagnostics = {
+                  globals = { "vim" }
+              }
+          }
+      }
     }
 
     lspconfig.ccls.setup {

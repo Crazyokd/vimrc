@@ -30,6 +30,9 @@ return {
       filters = {
           custom = { '.git' },
       },
+      view = {
+        side = "right",
+      },
     })
     
     -- set keymaps
