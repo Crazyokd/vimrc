@@ -28,7 +28,7 @@ return {
         ignore = false,
       },
       filters = {
-          custom = { '.git' },
+          custom = { '^.git$' }, -- 缩小通配范围
       },
       view = {
         side = "right",
