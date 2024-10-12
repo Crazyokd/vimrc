@@ -10,6 +10,7 @@ return {
                 cpp = { 'clang_format' },
                 json = { "prettier" },
                 yaml = { "prettier" },
+                xml = { "xmllint" },
                 markdown = { "prettier" },
             }
         })
