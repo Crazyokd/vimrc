@@ -22,5 +22,8 @@ return {
                 extra = false
             },
         })
+
+        local ft = require('Comment.ft')
+        ft.lex = {'// %s', '/* %s */'}
     end,
 }

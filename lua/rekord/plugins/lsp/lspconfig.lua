@@ -16,12 +16,16 @@ return {
 
       settings = {
           Lua = {
+              -- https://luals.github.io/wiki/settings/
               diagnostics = {
+                  enable = false,
                   globals = { "vim" }
               }
           }
       }
     }
+
+    -- lspconfig.scheme_langserver.setup{}
 
     lspconfig.ccls.setup {
       capabilities = capabilities,
