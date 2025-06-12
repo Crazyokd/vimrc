@@ -25,5 +25,6 @@ return {
 
         local ft = require('Comment.ft')
         ft.lex = {'// %s', '/* %s */'}
+        ft.yacc = {'// %s', '/* %s */'}
     end,
 }

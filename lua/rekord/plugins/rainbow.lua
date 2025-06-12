@@ -1,6 +1,6 @@
 return {
 	'hiphish/rainbow-delimiters.nvim',
-  event = 'VeryLazy',
+    event = 'VeryLazy',
 	config = function()
 		require 'rainbow-delimiters.setup'.setup({
     })

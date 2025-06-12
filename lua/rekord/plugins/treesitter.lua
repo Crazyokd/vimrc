@@ -21,6 +21,7 @@ return {
         "gitignore",
         "c",
         "cpp",
+        "go",
       },
     })
   end

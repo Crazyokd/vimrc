@@ -8,8 +8,9 @@ return {
                 lua = { 'stylua' },
                 c = { 'clang_format' },
                 cpp = { 'clang_format' },
-                json = { "prettier" },
-                yaml = { "prettier" },
+                -- Only run the first available formatter in the list
+                json = { "jq", "prettier", stop_after_first = true },
+                yaml = { "prettier", lsp_format = "fallback" },
                 xml = { "xmllint" },
                 markdown = { "prettier" },
             }
